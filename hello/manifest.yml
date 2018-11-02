@@ -1,0 +1,10 @@
+applications:
+- name: hello
+  disk_quota: 1G
+  instances: 1
+  memory: 1G
+  path: ./target/hello-0.0.1-SNAPSHOT.jar
+  buildpack: java_buildpack
+  random-route: true
+  services:
+      - SampleConfigServer
